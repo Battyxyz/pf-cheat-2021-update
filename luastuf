@@ -107,7 +107,7 @@ end)
 AimbotSection:NewToggle("Wall Check", "", function(state) wallCheck = state end)
 AimbotSection:NewSlider("Max Wallbangs", "Inclusive", 50, 0, function(s) maxWalls = s end)
 AimbotSection:NewSlider("Fov", "", 50000, 500, function(s) fov = s end)
-AimbotSection:NewSlider("Smoothing", "", 300, 100, function(s) smoothing = s/100 end)
+AimbotSection:NewSlider("Smoothing", "", 300, 0, function(s) smoothing = s/0 end)
 AimbotSection:NewDropdown("Target Part", "", {"Head", "Torso", "Right Arm", "Left Arm", "Right Leg", "Left Leg"}, function(currentOption) abTargetPart = currentOption end)
 
 
